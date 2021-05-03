@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','index',[
-    'halaman'=>'Beranda'
-]);
-Route::view('/galeri','galeri',[
-    'halaman'=>'Galeri'
-]);
-Route::view('/tentang','tentang',[
-    'halaman'=>'Tentang kami'
-]);
+Route::view('/','index');
+
+Route::view('/galeri','galeri');
+
+Route::view('/tentang','tentang');
+
+Route::view('/admin', 'admin.login');
+
+Route::view('/admin/success', 'admin.index');
