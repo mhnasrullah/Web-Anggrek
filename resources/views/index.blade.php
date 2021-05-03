@@ -2,7 +2,7 @@
 "{{asset('css/style.css')}}"    
 @endsection
 @section('title')
-    Beranda
+    {{$nama}}
 @endsection
 @include('template.header')
     <!-- Jumbotron -->
@@ -42,7 +42,7 @@
     <!-- Produk -->
     <section class="produk">
       <div class="container">
-        <div class="row mb-4 align-items-center mb-md-0 mb-5">
+        <div class="row mb-4 align-items-center mb-md-3 mb-5">
           <div class="col-lg-5 col-md-12">
             <h4>Lorem ipsum dolor sit amet</h4>
             <p class="mb-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -107,13 +107,13 @@
           </div>
         </div>
         <div class="row gy-0">
-          <div class="col d-md-flex justify-content-end col-12">
+          <div class="col-md-4 d-md-flex justify-content-end col-12">
             <a class="btn border-2 mt-4" href="#" role="button">Telepon</a>
           </div>
-          <div class="col d-md-flex justify-content-center col-12">
+          <div class="col-md-4 d-md-flex justify-content-center col-12">
             <a class="btn border-2 mt-4" href="#" role="button">Whatsapp</a>
           </div>
-          <div class="col d-md-flex justify-content-start col-12">
+          <div class="col-md-4 d-md-flex justify-content-start col-12">
             <a class="btn border-2 mt-4" href="#" role="button">Facebook</a>
           </div>
         </div>

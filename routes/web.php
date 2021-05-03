@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\GaleriController;
+use App\Http\Controllers\TentangController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','index');
+// Route::view('/','index');
+Route::get('/',[BerandaController::class,'index']);
+Route::get('/galeri',[GaleriController::class,'index']);
+Route::get('/tentang',[TentangController::class,'index']);
+// Route::view('/galeri','galeri');
 
-Route::view('/galeri','galeri');
+// Route::view('/tentang','tentang');
 
-Route::view('/tentang','tentang');
+// Route::view('/admin', 'admin.login');
 
-Route::view('/admin', 'admin.login');
-
-Route::view('/admin/success', 'admin.index');
+// Route::view('/admin/success', 'admin.index');
