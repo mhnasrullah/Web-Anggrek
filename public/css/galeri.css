@@ -1,0 +1,123 @@
+body {
+    font-family: "Lato";
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h6 {
+      font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+  
+  /* navbar */
+  nav {
+    background-color: #c4df9c;
+  }
+  nav a{
+    color: black !important;
+  }
+  .navbar-brand {
+    font-size: 28px;
+  }
+  .navbar-nav a {
+    font-size: 16px;
+    margin-left: 30px;
+    color: black;
+  }
+  .active {
+    font-weight: 700;
+  }
+  nav a.btn {
+    border-radius: 10px;
+    border-color: black;
+    width: 120px;
+    height: 40px;
+  }
+
+  /* judul */
+  .judul{
+      padding: 100px 0;
+      background-color: #c4df9c;
+  }
+  .judul h1{
+      font-family: 'Gentium Basic';
+  }
+
+  /* galeri */
+  .galeriA,.galeriC{
+      padding: 100px 0;
+  }
+  .galeriA img,.galeriC img{
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+  }
+  
+  .galeriB{
+      padding: 100px 0;
+      background-color: #c4df9c;
+  }
+  .galeriB img{
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+  }
+
+  /* footer */
+.footer{
+    background-color: #c4df9c;
+    padding: 50px 0;
+  }
+  .footer a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+  }
+  .footer a p{
+    margin-bottom: 4px;
+  }
+  .footer a img {
+    width: 20px;
+  }
+
+  /* tablet */
+  @media (max-width: 991.98px) {
+    
+    /* root */
+  h4 {
+    font-size: 24px;
+  }
+  h6 {
+      font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  /* nav */
+  .navbar-nav a{
+    font-size: 16px;
+  }
+
+  nav a.btn{
+    width: 100px;
+    height: 35px;
+  }
+
+  /* footer */
+  .footer h6{
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  /* footer */
+  .footer .group-button{
+    display: flex;
+    justify-content: start !important;
+  }
+}

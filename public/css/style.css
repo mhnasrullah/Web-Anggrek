@@ -1,0 +1,238 @@
+/* root */
+body {
+  font-family: "Lato";
+  font-weight: 400;
+}
+h4 {
+  font-size: 32px;
+}
+h6 {
+    font-size: 24px;
+}
+p {
+  font-size: 14px;
+}
+
+/* navbar */
+nav {
+  background-color: #c4df9c;
+}
+nav a{
+  color: black !important;
+}
+.navbar-brand {
+  font-size: 28px;
+}
+.navbar-nav a {
+  font-size: 16px;
+  margin-left: 30px;
+  color: black;
+}
+.active {
+  font-weight: 700;
+}
+nav a.btn {
+  border-radius: 10px;
+  border-color: black;
+  width: 120px;
+  height: 40px;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-color: #c4df9c;
+}
+.jumbotron h1{
+  font-family: 'Gentium Basic';
+}
+.jumbotron .container {
+  padding-top: 80px;
+}
+.jumbotron a.btn {
+  border-radius: 10px;
+  border-color: black;
+  width: 120px;
+  height: 40px;
+}
+.jumbotron .image {
+  background-image: url(../img/Jumbo.jpg);
+  background-size: 100%;
+  border-radius: 10px 10px 0 0;
+  background-position-y: 35%;
+  height: 300px;
+}
+
+/* sekilas  anggrek*/
+.sekilas {
+  padding: 100px 0 100px 0;
+}
+.sekilas .img {
+  height: 600px;
+  border-radius: 10px;
+  background-image: url(../img/infoAnggrek.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* produk */
+.produk {
+  padding: 100px 0 100px 0;
+  background-color: #c4df9c;
+}
+.produk .img {
+  background-image: url(../img/pexels-ylanite-koppens-1445419.jpg);
+  background-size: 100%;
+  background-position-y: 35%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.produk img{
+  border-radius: 10px;
+}
+
+/* lokasi */
+.lokasi {
+  padding: 100px 0 100px 0;
+}
+.lokasi .map {
+  border: 2px !important;
+  border-color: #c4df9c;
+}
+.lokasi a{
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: black;
+  padding: 8px 32px;
+}
+iframe{
+  width : 750px;
+  height : 350px;
+}
+
+/* hubungi */
+.hubungi {
+  margin-bottom: 100px;
+}
+.hubungi a{
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: black;
+  width: 220px;
+  height: 40px;
+}
+
+/* footer */
+.footer{
+  background-color: #c4df9c;
+  padding: 50px 0;
+}
+.footer a{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+.footer a p{
+  margin-bottom: 4px;
+}
+.footer a img {
+  width: 20px;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  
+  /* root */
+  h4 {
+    font-size: 24px;
+  }
+  h6 {
+      font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  /* nav */
+  .navbar-nav a{
+    font-size: 16px;
+  }
+
+  nav a.btn{
+    width: 100px;
+    height: 35px;
+  }
+
+  /* jumbotron */
+  .jumbotron h1{
+    font-size: 28px;
+  }
+  .jumbotron h5{
+    font-size: 16px;
+  }
+
+  /* sekilas */
+  .sekilas {
+    padding: 80px 0 100px 0;
+  }
+  .sekilas .img{
+    height: 450px;
+  }
+
+  /* produk */
+  .produk{
+    padding: 80px 0;
+  }
+  .produk .img{
+    height: 150px;
+  }
+  .produk h4,.produk p{
+    text-align: center;
+  }
+
+  /* lokasi */
+  iframe{
+    width: 100%;
+  }
+
+  /* hubungi */
+  .hubungi {
+    margin-bottom: 80px;
+  }
+  .hubungi a{
+    width: 150px;
+    height: 40px;
+  }
+
+
+  /* footer */
+  .footer h6{
+    font-weight: 700;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+
+  /* jumbotron */
+  .jumbotron .image{
+    height: 180px;
+    width: 100% !important;
+  }
+
+  .produk .col-md-4.col-12 p{
+    margin-top: -0.5rem;
+  }
+
+  /* hubungi */
+  .hubungi .row.gy-0 .col{
+    display: flex;
+    justify-content: center !important;
+  }
+
+  /* footer */
+  .footer .group-button{
+    display: flex;
+    justify-content: start !important;
+  }
+}
