@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\GaleriModel;
 
 class GaleriController extends Controller
 {
+    public function __construct(){
+        $this->GaleriModel = new GaleriModel();
+    } 
     public function index(){
-        $info = [
-            'nama'=>'Galeri'];
-        return view('index',$info);
+        $gambars = $this->GaleriModel->Data();
+        return view('galeri',['gambars'=>$gambars,'nama'=>'galeri']);
     }
 }

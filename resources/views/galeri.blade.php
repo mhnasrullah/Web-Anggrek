@@ -5,6 +5,7 @@
     Galeri
 @endsection
 @include('template.header')
+
     <!-- Judul -->
     <section class="judul">
         <div class="container">
@@ -26,11 +27,9 @@
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
+                @for($i=0;$i<5;$i++)
+                    <div class="col-md-4 col-6"><img src="img/{{$gambars[$i]->file}}"  alt="" srcset=""></div>
+                @endfor
             </div>
         </div>
     </section>
@@ -39,16 +38,15 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 col-6">
-                    <img src="{{asset('img/produk.png')}}"  alt="" srcset="">
+                    <img src="img/{{$gambars[5]->file}}"  alt="" srcset="">
                 </div>
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
+                @for($i=6;$i<10;$i++)
+                    <div class="col-md-4 col-6"><img src="img/{{$gambars[$i]->file}}"  alt="" srcset=""></div>
+                @endfor
             </div>
         </div>
     </section>
@@ -56,15 +54,16 @@
     <section class="galeriC">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
+                @for($i=10;$i<12;$i++)
+                    <div class="col-md-4 col-6"><img src="img/{{$gambars[$i]->file}}"  alt="" srcset=""></div>
+                @endfor
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
+                @for($i=12;$i<15;$i++)
+                    <div class="col-md-4 col-6"><img src="img/{{$gambars[$i]->file}}"  alt="" srcset=""></div>
+                @endfor
             </div>
         </div>
     </section>
@@ -73,16 +72,15 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 col-6">
-                    <img src="{{asset('img/produk.png')}}"  alt="" srcset="">
+                    <img src="img/{{$gambars[15]->file}}"  alt="" srcset="">
                 </div>
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
+                @for($i=16;$i<20;$i++)
+                    <div class="col-md-4 col-6"><img src="img/{{$gambars[$i]->file}}"  alt="" srcset=""></div>
+                @endfor
             </div>
         </div>
     </section>
@@ -94,11 +92,9 @@
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
-                <div class="col-md-4 col-6"><img src="{{asset('img/produk.png')}}"  alt="" srcset=""></div>
+                @for($i=20;$i<24;$i++)
+                    <div class="col-md-4 col-6"><img src="img/{{$gambars[$i]->file}}"  alt="" srcset=""></div>
+                @endfor
             </div>
         </div>
     </section>

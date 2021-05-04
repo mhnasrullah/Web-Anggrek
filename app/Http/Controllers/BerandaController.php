@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 class BerandaController extends Controller
 {
     public function index(){
-        $info = [
-            'nama'=>'Beranda'];
-        return view('index',$info);
+        return view('index',['nama'=>'Beranda']);
     }
 }

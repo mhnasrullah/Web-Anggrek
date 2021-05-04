@@ -1,9 +1,6 @@
 @section('style')
 "{{asset('css/style.css')}}"    
 @endsection
-@section('title')
-    {{$nama}}
-@endsection
 @include('template.header')
     <!-- Jumbotron -->
     <section class="jumbotron">

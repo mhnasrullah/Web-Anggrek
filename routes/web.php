@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\TentangController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,12 +19,13 @@ use App\Http\Controllers\TentangController;
 
 // Route::view('/','index');
 Route::get('/',[BerandaController::class,'index']);
-Route::get('/galeri',[GaleriController::class,'index']);
-Route::get('/tentang',[TentangController::class,'index']);
+
 // Route::view('/galeri','galeri');
+Route::get('/galeri',[GaleriController::class,'index']);
 
 // Route::view('/tentang','tentang');
+Route::get('/tentang',[TentangController::class,'index']);
 
-// Route::view('/admin', 'admin.login');
+Route::get('/admin',[LoginController::class,'index']);
 
-// Route::view('/admin/success', 'admin.index');
+Route::get('/admin/set',[AdminController::class,'index']);

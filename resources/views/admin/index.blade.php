@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Admin</title>
+    <title>{{$nama}}</title>
   </head>
   <body>
     
@@ -31,7 +31,7 @@
               <img src="https://picsum.photos/150" class="mx-auto d-block w-100" alt="...">
               <div class="card-body">
                 <div class="mb-3">
-                  <form action="">
+                  <form action="/">
                     <input class="form-control mb-2" type="file" id="formFile">
                     <button type="submit" class="btn btn-primary w-100">Ubah</button>
                   </form>

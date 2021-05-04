@@ -8,9 +8,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Admin</title>
+    <title>{{$nama}}</title>
   </head>
   <body>
+    
+    {{-- ujicoba tampil data admin --}}
+    <div class="container">
+        <ol class="list-group">
+            @foreach ($admin as $item)
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{$item['nama']}}</div>
+                    {{$item['email']}}
+                </div>
+            </li>
+            @endforeach
+
+        </ol>
+    </div>
+      {{-- akhir ujicoba tampil data admin --}}
+
       <div class="container pt-5">
           <div class="row justify-content-center">
               <div class="col-lg-5">
