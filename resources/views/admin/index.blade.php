@@ -32,7 +32,7 @@
                 <img src="../img/{{$gambars[$i]->file}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set" method="POST">
+                    <form action="" method="POST">
                       <input class="form-control mb-2" type="file" id="formFile">
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
                     </form>
@@ -55,7 +55,7 @@
                 <img src="../../img/{{$gambars[$i]->file}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set" method="POST">
+                    <form action="" method="POST">
                       <input class="form-control mb-2" type="file" id="formFile">
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
                     </form>
@@ -78,7 +78,7 @@
                 <img src="../img/{{$gambars[$i]->file}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set" method="POST">
+                    <form action="" method="POST">
                       <input class="form-control mb-2" type="file" id="formFile">
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
                     </form>
@@ -101,7 +101,7 @@
                 <img src="../img/{{$gambars[$i]->file}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set" method="POST">
+                    <form action="" method="POST">
                       <input class="form-control mb-2" type="file" id="formFile">
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
                     </form>
@@ -124,7 +124,7 @@
                 <img src="../img/{{$gambars[$i]->file}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set" method="POST">
+                    <form action="" method="POST">
                       <input class="form-control mb-2" type="file" id="formFile">
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
                     </form>
