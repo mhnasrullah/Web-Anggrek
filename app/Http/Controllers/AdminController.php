@@ -17,8 +17,10 @@ class AdminController extends Controller
      */
     public function index()
     {
+        // dd(url('/img'));
         $gambars = $this->GaleriModel->Data();
         return view('admin/index',['gambars'=>$gambars,'nama'=>'Admin-galeri']);
+    
     }
 
     /**
@@ -71,9 +73,19 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$id)
     {
-        //
+        // return $request->file('file')->store('img');
+        $filex = $request->file->extension();
+        $filename = $id.'.'.$filex;
+
+        $path = $request->file('file')->storeAs(
+            'public/img',$filename
+        );
+
+        $this->GaleriModel->updateGambar($id,$filename);
+
+        return redirect()->route('setdata');
     }
 
     /**

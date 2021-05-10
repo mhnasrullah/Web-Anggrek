@@ -29,7 +29,9 @@ Route::get('/tentang',[TentangController::class,'index']);
 
 Route::get('/admin',[LoginController::class,'index']);
 
-Route::get('/admin/set',[AdminController::class,'index']);
+Route::get('/admin/set',[AdminController::class,'index'])->name('setdata');
+
+Route::post('/admin/set/{id}',[AdminController::class,'update']);
 
 Route::get('/admin/data',[DataController::class,'index'])->name('dataAdmin');
 

@@ -12,6 +12,7 @@ class GaleriController extends Controller
     } 
     public function index(){
         $gambars = $this->GaleriModel->Data();
-        return view('galeri',['gambars'=>$gambars,'nama'=>'galeri']);
+        // dd($gambars);
+        return view('galeri',['gambars'=> $gambars,'nama' => 'galeri']);
     }
 }

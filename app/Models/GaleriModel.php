@@ -11,4 +11,10 @@ class GaleriModel extends Model
     public function Data(){
         return DB::table('gambar')->get();
     }
+
+    public function updateGambar($id,$file){
+        return DB::table('gambar')
+        ->where('id', $id)
+        ->update(['file' => $file]);
+    }
 }
