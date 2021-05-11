@@ -28,7 +28,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
                 @for($i=0;$i<5;$i++)
-                    <div class="col-md-4 col-6"><img src="{{asset('storage/img/'.$gambars[$i]->file)}}"  alt="" srcset=""></div>
+                    <div class="col-md-4 col-6">
+                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                    </div>
                 @endfor
             </div>
         </div>
@@ -38,14 +40,16 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 col-6">
-                    <img src="{{asset('storage/img/'.$gambars[5]->file)}}"  alt="" srcset="">
+                    <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[5])}});"></div>
                 </div>
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
                 @for($i=6;$i<10;$i++)
-                    <div class="col-md-4 col-6"><img src="{{asset('storage/img/'.$gambars[$i]->file)}}"  alt="" srcset=""></div>
+                    <div class="col-md-4 col-6">
+                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                    </div>
                 @endfor
             </div>
         </div>
@@ -55,14 +59,18 @@
         <div class="container">
             <div class="row align-items-center">
                 @for($i=10;$i<12;$i++)
-                    <div class="col-md-4 col-6"><img src="{{asset('storage/img/'.$gambars[$i]->file)}}"  alt="" srcset=""></div>
+                    <div class="col-md-4 col-6">
+                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                    </div>
                 @endfor
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
                 @for($i=12;$i<15;$i++)
-                    <div class="col-md-4 col-6"><img src="{{asset('storage/img/'.$gambars[$i]->file)}}"  alt="" srcset=""></div>
+                    <div class="col-md-4 col-6">
+                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                    </div>
                 @endfor
             </div>
         </div>
@@ -72,14 +80,16 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 col-6">
-                    <img src="{{asset('storage/img/'.$gambars[15]->file)}}"  alt="" srcset="">
+                    <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[15])}});"></div>
                 </div>
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
                 @for($i=16;$i<20;$i++)
-                    <div class="col-md-4 col-6"><img src="{{asset('storage/img/'.$gambars[$i]->file)}}"  alt="" srcset=""></div>
+                    <div class="col-md-4 col-6">
+                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                    </div>
                 @endfor
             </div>
         </div>
@@ -92,8 +102,10 @@
                     <h4>Lorem ipsum, dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur hic dicta reprehenderit modi odit dolorem laudantium iure</p>
                 </div>
-                @for($i=20;$i<24;$i++)
-                    <div class="col-md-4 col-6"><img src="{{asset('storage/img/'.$gambars[$i]->file)}}"  alt="" srcset=""></div>
+                @for($i=20;$i<25;$i++)
+                    <div class="col-md-4 col-6">
+                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                    </div>
                 @endfor
             </div>
         </div>

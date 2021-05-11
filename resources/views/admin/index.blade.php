@@ -26,13 +26,13 @@
           <div class="col-12 col-md-4 mt-2 d-flex align-items-center">
             <h1>Lorem ipsum dolor sit.</h1>
           </div>
-          @for($i=0;$i<5;$i++)
+          @for($i=1;$i<6;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i]->file)}}" class="mx-auto d-block w-100" alt="...">
+                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set/{{$gambars[$i]->id}}" method="POST" enctype="multipart/form-data">
+                    <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
                       @csrf
                       <input class="form-control mb-2" type="file" id="formFile" name='file'>
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
@@ -50,13 +50,13 @@
           <div class="col-12 col-md-4 mt-2 d-flex align-items-center">
             <h1>Lorem ipsum dolor sit.</h1>
           </div>
-          @for($i=5;$i<10;$i++)
+          @for($i=6;$i<11;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i]->file)}}" class="mx-auto d-block w-100" alt="...">
+                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set/{{$gambars[$i]->id}}" method="POST" enctype="multipart/form-data">
+                    <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
                       @csrf
                       <input class="form-control mb-2" type="file" id="formFile" name='file'>
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
@@ -74,13 +74,13 @@
           <div class="col-12 col-md-4 mt-2 d-flex align-items-center">
             <h1>Lorem ipsum dolor sit.</h1>
           </div>
-          @for($i=10;$i<15;$i++)
+          @for($i=11;$i<16;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i]->file)}}" class="mx-auto d-block w-100" alt="...">
+                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set/{{$gambars[$i]->id}}" method="POST" enctype="multipart/form-data">
+                    <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
                       @csrf
                       <input class="form-control mb-2" type="file" id="formFile" name='file'>
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
@@ -98,13 +98,13 @@
           <div class="col-12 col-md-4 mt-2 d-flex align-items-center">
             <h1>Lorem ipsum dolor sit.</h1>
           </div>
-          @for($i=15;$i<20;$i++)
+          @for($i=16;$i<21;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i]->file)}}" class="mx-auto d-block w-100" alt="...">
+                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set/{{$gambars[$i]->id}}" method="POST" enctype="multipart/form-data">
+                    <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
                       @csrf
                       <input class="form-control mb-2" type="file" id="formFile" name='file'>
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>
@@ -122,13 +122,13 @@
           <div class="col-12 col-md-4 mt-2 d-flex align-items-center">
             <h1>Lorem ipsum dolor sit.</h1>
           </div>
-          @for($i=20;$i<25;$i++)
+          @for($i=21;$i<26;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage.img.'.$gambars[$i]->file)}}" class="mx-auto d-block w-100" alt="...">
+                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
-                    <form action="/admin/set/{{$gambars[$i]->id}}" method="POST" enctype="multipart/form-data">
+                    <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
                       @csrf
                       <input class="form-control mb-2" type="file" id="formFile" name='file'>
                       <button type="submit" class="btn btn-primary w-100">Ubah</button>

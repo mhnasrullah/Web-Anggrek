@@ -20,9 +20,12 @@ class AdminController extends Controller
     public function index()
     {
         // dd(url('/img'));
-        $gambars = $this->GaleriModel->Data();
-        dd($gambars);
-        return view('admin/index',['gambars'=>$gambars,'nama'=>'Admin-galeri']);
+        $imagefile = [];
+        for ($i=1; $i < 26; $i++) { 
+            $imagefile[$i] = $this->image->getfile($i);
+        }
+        // dd($imagefile);
+        return view('admin/index',['gambars'=>$imagefile,'nama'=>'Admin-galeri']);
 
     
     }
@@ -81,14 +84,13 @@ class AdminController extends Controller
     {
         // return $request->file('file')->store('img');
         $filex = $request->file->extension();
-        $filename = $id.'.'.$filex;
+        $filename = $id.'.png';
 
         $path = $request->file('file')->storeAs(
             'public/img',$filename
         );
-        // dd($path);
 
-        $this->image->updateGambar();
+        $this->image->updateData($id,$filename);
 
         return redirect()->route('setdata');
     }

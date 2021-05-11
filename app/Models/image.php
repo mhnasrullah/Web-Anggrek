@@ -7,11 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class image extends Model
 {
-    public function getData($id){
+    public function getfile($id){
         $image = image::find($id);
         return $image->file;
     }
-    public function updateData($id,$file){
+
+    public function updateData($id,$filename){
         $image = image::find($id);
         $image->file = $filename;
         $image->save();
