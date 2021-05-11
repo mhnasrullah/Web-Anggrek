@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\GaleriModel;
+use App\Models\image;
 
 class AdminController extends Controller
 {
     public function __construct(){
         $this->GaleriModel = new GaleriModel();
+        $this->image = new image();
     } 
     /**
      * Display a listing of the resource.
@@ -19,7 +21,9 @@ class AdminController extends Controller
     {
         // dd(url('/img'));
         $gambars = $this->GaleriModel->Data();
+        dd($gambars);
         return view('admin/index',['gambars'=>$gambars,'nama'=>'Admin-galeri']);
+
     
     }
 
@@ -82,8 +86,9 @@ class AdminController extends Controller
         $path = $request->file('file')->storeAs(
             'public/img',$filename
         );
+        // dd($path);
 
-        $this->GaleriModel->updateGambar($id,$filename);
+        $this->image->updateGambar();
 
         return redirect()->route('setdata');
     }

@@ -4,19 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 
-class GaleriModel extends Model
+class image extends Model
 {
-    
-    public function Data(){
-        return DB::table('images')->get();
+    public function getData($id){
+        $image = image::find($id);
+        return $image->file;
     }
-
-    public function updateGambar($id,$file){
+    public function updateData($id,$file){
         $image = image::find($id);
         $image->file = $filename;
         $image->save();
     }
-
 }

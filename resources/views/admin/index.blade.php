@@ -125,7 +125,7 @@
           @for($i=20;$i<25;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i]->file)}}" class="mx-auto d-block w-100" alt="...">
+                <img src="{{asset('storage.img.'.$gambars[$i]->file)}}" class="mx-auto d-block w-100" alt="...">
                 <div class="card-body">
                   <div class="mb-3">
                     <form action="/admin/set/{{$gambars[$i]->id}}" method="POST" enctype="multipart/form-data">
