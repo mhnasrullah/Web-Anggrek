@@ -29,7 +29,7 @@
                 </div>
                 @for($i=0;$i<5;$i++)
                     <div class="col-md-4 col-6">
-                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                        <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                     </div>
                 @endfor
             </div>
@@ -40,7 +40,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 col-6">
-                    <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[5])}});"></div>
+                    <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[5])}});"></div>
                 </div>
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
@@ -48,7 +48,7 @@
                 </div>
                 @for($i=6;$i<10;$i++)
                     <div class="col-md-4 col-6">
-                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                        <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                     </div>
                 @endfor
             </div>
@@ -60,7 +60,7 @@
             <div class="row align-items-center">
                 @for($i=10;$i<12;$i++)
                     <div class="col-md-4 col-6">
-                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                        <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                     </div>
                 @endfor
                 <div class="col-md-4 col-6">
@@ -69,7 +69,7 @@
                 </div>
                 @for($i=12;$i<15;$i++)
                     <div class="col-md-4 col-6">
-                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                        <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                     </div>
                 @endfor
             </div>
@@ -80,7 +80,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 col-6">
-                    <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[15])}});"></div>
+                    <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[15])}});"></div>
                 </div>
                 <div class="col-md-4 col-6">
                     <h4>Lorem ipsum, dolor sit amet</h4>
@@ -88,7 +88,7 @@
                 </div>
                 @for($i=16;$i<20;$i++)
                     <div class="col-md-4 col-6">
-                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                        <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                     </div>
                 @endfor
             </div>
@@ -104,7 +104,7 @@
                 </div>
                 @for($i=20;$i<25;$i++)
                     <div class="col-md-4 col-6">
-                        <div class="img w100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
+                        <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                     </div>
                 @endfor
             </div>

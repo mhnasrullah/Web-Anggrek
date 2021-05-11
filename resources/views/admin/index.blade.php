@@ -9,6 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
+    <style>
+      .img{
+          height: 400px;
+          background-size: cover !important;
+          background-position: center !important;
+          border-radius: 10px;
+          margin-bottom: 20px;
+      }
+      @media (max-width: 991.98px) {
+        .img{
+          height: 280px;
+        }
+      
+      @media (max-width: 575.98px) {
+        .img{
+          height: 240px;
+        }
+      }
+      }
+    </style>
     <title>{{$nama}}</title>
   </head>
   <body>
@@ -29,7 +49,7 @@
           @for($i=1;$i<6;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
+                <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                 <div class="card-body">
                   <div class="mb-3">
                     <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
@@ -53,7 +73,7 @@
           @for($i=6;$i<11;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
+                <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                 <div class="card-body">
                   <div class="mb-3">
                     <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
@@ -77,7 +97,7 @@
           @for($i=11;$i<16;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
+                <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                 <div class="card-body">
                   <div class="mb-3">
                     <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
@@ -101,7 +121,7 @@
           @for($i=16;$i<21;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
+                <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                 <div class="card-body">
                   <div class="mb-3">
                     <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
@@ -125,7 +145,7 @@
           @for($i=21;$i<26;$i++)
             <div class="col-12 col-md-4 mt-2">
               <div class="card border-2 border-dark">
-                <img src="{{asset('storage/img/'.$gambars[$i])}}" class="mx-auto d-block w-100" alt="...">
+                <div class="img w-100" style="background: url({{asset('storage/img/'.$gambars[$i])}});"></div>
                 <div class="card-body">
                   <div class="mb-3">
                     <form action="/admin/set/{{$i}}" method="POST" enctype="multipart/form-data">
